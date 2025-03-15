@@ -1,0 +1,61 @@
+.partners {
+    &-list {
+        &__item {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-top: 2px solid $tt-green;
+            border-bottom: 2px solid $tt-green;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $tt-green;
+                position: absolute;
+            }
+
+            &::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $tt-green;
+                position: absolute;
+            }
+
+            &:nth-child(odd) {
+                &::after {
+                    top: -6px;
+                    left: -3px;
+                }
+    
+                &::before {
+                    bottom: -6px;
+                    right: -3px;
+                }
+            }
+
+            &:nth-child(even) {
+                &::after {
+                    top: -6px;
+                    right: -3px;
+                }
+    
+                &::before {
+                    bottom: -6px;
+                    left: -3px;
+                }
+            }
+
+            &:not(:last-child) {
+                border-bottom: none; 
+            }
+
+            &--image {
+                width: 100%;
+            }
+        }
+    }
+}

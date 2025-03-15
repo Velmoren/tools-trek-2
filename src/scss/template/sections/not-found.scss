@@ -1,0 +1,38 @@
+.not-found {
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+    &-box {
+        height: 550px;
+        max-width: 690px;
+        margin: 0 auto;
+        background-image: url('/images/not-found/image-1.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &-btn {
+        width: 100%;
+        max-width: 466px;
+    }
+
+    @media (max-width: 768px) {
+        &-box {
+            background-position: top center;
+            background-size: 360px;
+            height: 480px;
+            justify-content: flex-end;
+        }
+    }
+
+    @media (max-width: 380px) {
+        &-box {
+            background-size: contain; 
+        }
+    }
+}

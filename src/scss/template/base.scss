@@ -1,0 +1,109 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: $tt-black;
+    color: $tt-white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('/images/Illustration.svg'), url('/images/Background.png');
+    background-repeat: no-repeat;
+    background-position: center 0px, center top;
+    background-size: contain, 100% 1200px;
+
+    @media (max-width: 2200px) {
+        background-size: contain, 100% 1000px;
+    }
+
+    @media (max-width: 1920px) {
+        background-size: 1930px, contain;
+    }
+
+    @media (max-width: 1320px) {
+        background-size: 1850px, contain;
+    }
+}
+
+.page-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex-grow: 1;
+
+    padding-top: 120px;
+
+    @media (max-width: 991px) {
+        padding-top: 0;
+    }
+}
+
+section {
+    padding-top: 180px;
+    padding-bottom: 180px;
+
+    @media (max-width: 991px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    @media (max-width: 480px) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.color {
+    &--white {
+        color: $tt-white;
+    }
+
+    &--green {
+        color: $tt-green;
+    }
+
+    &--gradient {
+        background-image: linear-gradient(to right, #f1fff0, #d3f1d0, #b5e3b1, #96d592, #77c773, #65b761, #52a850, #3e993e, #368636, #2f732f, #276127, #205020);    
+        color: transparent;
+        background-clip: text;
+    }
+}
+
+.bg {
+    &--green {
+        background-image: url('/images/section-green.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.bd {
+    &--green {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            padding: 2px;
+            background: linear-gradient(to right, #49b348, #46ab45, #43a442, #409c3f, #3d953c, #398d39, #368435, #327c32, #2d712d, #296629, #245b24, #205020);
+            -webkit-mask: 
+              linear-gradient(#fff 0 0) content-box, 
+              linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+                    mask-composite: exclude;
+            pointer-events: none;
+        }
+    }
+}

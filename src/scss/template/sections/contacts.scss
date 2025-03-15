@@ -1,0 +1,23 @@
+.contacts {
+    &__list {
+        row-gap: 106px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        a {
+            &:hover {
+                color: $tt-green;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__list {
+            row-gap: 60px;
+        }
+    }
+}

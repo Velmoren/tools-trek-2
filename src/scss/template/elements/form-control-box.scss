@@ -1,0 +1,17 @@
+.form-control-box {
+    position: relative;
+
+    button.icon-search {
+        position: absolute;
+        top: calc(50% - 8px);
+        right: 22px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}

@@ -1,0 +1,70 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-item {
+        background: $tt-bg-green-dark;
+
+        border: none;
+        border-radius: 10px !important;
+        overflow: hidden;
+
+        &:has(button:not(.collapsed)) {
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 10px;
+                padding: 2px;
+                background: linear-gradient(to right, #49b348, #46ab45, #43a442, #409c3f, #3d953c, #398d39, #368435, #327c32, #2d712d, #296629, #245b24, #205020);
+                -webkit-mask: 
+                  linear-gradient(#fff 0 0) content-box, 
+                  linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                        mask-composite: exclude;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &-button {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+
+        img {
+            align-self: flex-start;
+        }
+
+        &:focus, &:active {
+            outline: none;
+            box-shadow: none;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        &:after {
+            background-position: center;
+            align-self: flex-start;
+        }
+    }
+
+    &-body {
+        padding: 0 30px 30px 30px;
+
+        &__content {
+            border-radius: 10px;
+            background-color: transparent;
+        }
+    }
+}

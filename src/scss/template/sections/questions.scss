@@ -1,0 +1,15 @@
+.questions {
+    &-control {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            padding: 18px 56px;
+
+            @media (max-width: 576px) {
+               width: 100%;
+            }
+        }
+    }
+}

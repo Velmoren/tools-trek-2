@@ -1,0 +1,57 @@
+@import "./utils/reset";
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/bootstrap";
+@import "./utils/animations";
+
+@import "./template/base";
+@import "./template/header";
+@import "./template/footer";
+
+// ANIMATIONS
+@import "./libs/animate.min.css";
+@import "./libs/hover.css";
+// @import "@splidejs/splide/css";
+
+// ELEMENTS
+@import "./template/elements/buttons.scss";
+@import "./template/elements/title.scss";
+// @import "./template/elements/title-group.scss";
+@import "./template/elements/text.scss";
+@import "./template/elements/sticker.scss";
+@import "./template/elements/accordion.scss";
+// @import "./template/elements/tabs.scss";
+// @import "./template/elements/card.scss";
+// @import "./template/elements/nav-link.scss";
+@import "./template/elements/form-select.scss";
+@import "./template/elements/form-control.scss";
+@import "./template/elements/form-control-box.scss";
+@import "./template/elements/form-check.scss";
+@import "./template/elements/form-group.scss";
+// @import "./template/elements/badge.scss";
+// @import "./template/elements/list.scss";
+@import "./template/elements/modal.scss";
+// @import "./template/elements/avatar.scss";
+
+// SECTIONS
+@import "./template/sections/hero.scss";
+@import "./template/sections/choose.scss";
+@import "./template/sections/pricing.scss";
+@import "./template/sections/questions.scss";
+@import "./template/sections/banner.scss";
+// @import "./template/sections/assistance.scss";
+// @import "./template/sections/collaboration.scss";
+// @import "./template/sections/products.scss";
+// @import "./template/sections/approach.scss";
+// @import "./template/sections/not-found.scss";
+// @import "./template/sections/platforms-hero.scss";
+// @import "./template/sections/partners.scss";
+// @import "./template/sections/solutions.scss";
+// @import "./template/sections/form.scss";
+// @import "./template/sections/sign.scss";
+// @import "./template/sections/contacts.scss";
+// @import "./template/sections/team.scss";
+// @import "./template/sections/quality.scss";
+// @import "./template/sections/migration-cards.scss";
+// @import "./template/sections/blog.scss";
+// @import "./template/sections/explore.scss";

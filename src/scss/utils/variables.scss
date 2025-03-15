@@ -1,0 +1,78 @@
+// // Variable overrides second
+$tt-transparent: transparent;
+$tt-white: #F1FFF0;
+$tt-black: #050c05;
+$tt-green-light: rgba(235, 247, 235, 1);
+$tt-green: rgb(73, 179, 72);
+$tt-green-dark: rgba(51, 160, 50, 1);
+$tt-gray-light: rgb(250, 250, 250);
+$tt-gray: rgb(222, 222, 222);
+$tt-gray-dark: rgb(194, 194, 194);
+$tt-blue: rgba(68, 96, 197, 1);
+$tt-skin: rgb(255, 188, 200);
+$tt-purple: rgb(63, 61, 86);
+
+$tt-bg-green-dark: #0a180a;
+
+$enable-shadows: true;
+$prefix: "tt-";
+
+$modal-fade-transform: none;
+
+$accordion-icon-width: 30px;
+
+$accordion-button-icon:         url("data:image/svg+xml,%3Csvg width='20' height='3' viewBox='0 0 20 3' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 2.5H0V0H20V2.5Z' fill='%2349B348'/%3E%3Cpath d='M19 1.5H1V1H19V1.5Z' stroke='url(%23paint0_linear_3872_20374)' stroke-opacity='0.7' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_3872_20374' x1='0' y1='0' x2='5.46578' y2='10.2502' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2349B348'/%3E%3Cstop offset='0.5' stop-color='%23398B38'/%3E%3Cstop offset='1' stop-color='%23205020'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+$accordion-button-active-icon:  url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.4286 10.0489H19V10.9388H11.4286H10.4286V11.9388V19.6088H9.57143V11.9388V10.9388H8.57143H1V10.0489H8.57143H9.57143V9.04886V1.37891H10.4286V9.04886V10.0489H11.4286Z' stroke='url(%23paint0_linear_3872_20370)' stroke-opacity='0.9' stroke-width='2'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_3872_20370' x1='0' y1='0.378906' x2='23.4299' y2='5.80887' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2349B348'/%3E%3Cstop offset='0.5' stop-color='%23398B38'/%3E%3Cstop offset='1' stop-color='%231F4D1F'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+
+$container-max-widths: (
+  xxs: 100%,
+  xs: 100%,
+  sm: 480px,
+  md: 714px,
+  lg: 930px,
+  xl: 1224px
+);
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 380px,
+  sm: 576px,
+  md: 768px,
+  lg: 991px,
+  xl: 1320px,
+  xxl: 1920px,
+);
+
+$grid-gutter-width: 1.5rem;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  12px: 12px,
+  20px: 20px,
+  28px: 28px,
+  32px: 32px,
+  40px: 40px,
+  50px: 50px,
+  60px: 60px,
+  100px: 100px,
+  120px: 120px,
+);
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  12px: 12px,
+  20px: 20px,
+  28px: 28px,
+  40px: 40px,
+  60px: 60px,
+  90px: 90px
+);

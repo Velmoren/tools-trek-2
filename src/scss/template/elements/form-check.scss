@@ -1,0 +1,88 @@
+.form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+
+    &-inline {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &-input[type=checkbox] {
+        appearance: none;
+        position: relative;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        background: $tt-white;
+        border-radius: 4px;
+        border: 1px solid $tt-black;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            font-size: 20px;
+            background-image: url("/images/icons/form-check.svg");
+            background-repeat: no-repeat;
+            top: 2px;
+            left: 2px;
+        }
+
+        &:checked::after {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &-input[type=radio] {
+        appearance: none;
+        position: relative;
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $tt-white;
+        border: 2px solid $tt-green;
+        transition: .0s;
+        margin: 0;
+        cursor: pointer;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            font-size: 20px;
+            background-color: $tt-green;
+            border-radius: 50%;
+            transition: .0s;
+            top: 3px;
+            left: 3px;
+        }
+
+        &:checked::after {
+            width: 10px;
+            height: 10px;
+            transition: .0s;
+        }
+
+        & ~ label {
+            cursor: pointer;
+        }
+    }
+
+    &-label {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @media (max-width: 768px) {
+        &-label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}

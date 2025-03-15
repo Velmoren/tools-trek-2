@@ -1,0 +1,57 @@
+.tabs {
+    display: flex;
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: calc(100% / 3);
+        cursor: pointer;
+        border: 1px solid $tt-green;
+        color: $tt-black;
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+
+        &:hover {
+            border-width: 3px;
+            border: 3px solid $tt-green;
+        }
+
+        &.active {
+            border: 3px solid $tt-green;
+            background-color: $tt-green;
+            color: $tt-white;
+        }
+    }
+
+    &__content {
+        .tab-pane {
+            display: none;
+
+            &.active {
+                display: flex;
+            }
+        }
+    }
+
+    &--desktop {
+        display: flex;
+    }
+
+    &--mobile {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        &--desktop {
+            display: none;
+        }
+    
+        &--mobile {
+            display: block;
+        }   
+    }
+}

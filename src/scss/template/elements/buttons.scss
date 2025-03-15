@@ -1,0 +1,55 @@
+.btn {
+    color: $tt-white;
+    background-color: $tt-green;
+    border: 3px solid $tt-green;
+    padding: 13px 29px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $tt-green-dark;
+        border: 3px solid $tt-green-dark;
+    }  
+    
+    &:active {
+        background-color: $tt-green;
+        border: 3px solid $tt-green-dark;
+    }
+
+    &.btn-outline {
+        color: $tt-white;
+        background-color: $tt-transparent;
+        border: 1px solid $tt-green;
+        padding: 15px 31px;
+
+        &:hover {
+            background-color: $tt-green;
+            border: 1px solid $tt-green;
+            color: $tt-white;
+        }
+
+        &:active {
+            background-color: $tt-green-dark;
+            border: 1px solid $tt-green-dark;
+            color: $tt-white;
+        }    
+    }
+
+    &.btn--md {
+        padding: 7px 24px;
+    }
+
+    &.mw-540px {
+        width: 100%;
+        max-width: 540px;
+    }
+}

@@ -1,0 +1,70 @@
+.text {
+    text-decoration: none;
+
+    &--lg {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    &--md {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    
+    &--sm {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    &--extra-sm {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &--xsm {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &--white {
+        color: $tt-white;
+    }
+
+    &--black {
+        color: $tt-black;
+    }
+
+    &--green {
+        color: $tt-green;
+    }
+
+    &--gray {
+        color: $tt-gray-dark;
+    }
+
+    &--bold {
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        &--lg {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    
+        &--md {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        
+        &--sm {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    
+        &--extra-sm {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

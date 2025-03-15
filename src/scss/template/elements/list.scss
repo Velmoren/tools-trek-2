@@ -1,0 +1,195 @@
+.list {
+    display: flex;
+    flex-direction: column;
+
+    &--circle,
+    &--circle-light {
+        li {
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                position: absolute;
+            }
+        }
+
+        &.list--lg {
+            padding-left: 28px;
+            gap: 20px;
+
+            li::after {
+                top: 5px;
+                left: -20px;
+            }
+        }
+
+        &.list--md {
+            padding-left: 26px;
+            gap: 16px;
+
+            li::after {
+                top: 4px;
+                left: -20px;
+            }
+        }
+
+        &.list--sm {
+            padding-left: 20px;
+            gap: 12px;
+
+            li::after {
+                top: 3px;
+                left: -20px;
+            }
+        }
+    }
+
+    &--circle li::after {
+        background-color: $tt-green;
+    }
+
+    &--circle-light li::after {
+        background-color: $tt-white;
+    }
+
+    &--check,
+    &--check-light {
+        li {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        &.list--lg {
+            padding-left: 28px;
+            gap: 20px;
+
+            li::after {
+                top: -1px;
+                left: -28px;
+            }
+        }
+
+        &.list--md {
+            padding-left: 26px;
+            gap: 16px;
+
+            li::after {
+                top: -1px;
+                left: -26px;
+            }
+        }
+
+        &.list--sm {
+            padding-left: 20px;
+            gap: 12px;
+
+            li::after {
+                top: -1px;
+                left: -28px;
+            }
+        }
+    }
+
+    &--check li::after {
+        background-image: url('/images/icons/form-check.svg');
+        background-size: contain;
+    }
+
+    &--check-light li::after {
+        background-image: url('/images/icons/form-check-light.svg');
+        background-size: contain;
+    }
+
+    @media (max-width: 768px) {
+        &--circle {
+            li {
+                &::after {
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+    
+            &.list--lg {
+                padding-left: 14px;
+                gap: 12px;
+
+                li::after {
+                    top: 4px;
+                    left: -14px;
+                }
+            }
+    
+            &.list--md {
+                padding-left: 14px;
+                gap: 12px;
+
+                li::after {
+                    top: 4px;
+                    left: -14px;
+                }
+            }
+    
+            &.list--sm {
+                padding-left: 14px;
+                gap: 12px;
+
+                li::after {
+                    top: 4px;
+                    left: -14px;
+                }
+            }
+        }
+
+        &--check,
+        &--check-light {
+            li {
+                &::after {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+    
+            &.list--lg {
+                padding-left: 20px;
+                gap: 12px;
+
+                li::after {
+                    top: 2px;
+                    left: -18px;
+                }
+            }
+    
+            &.list--md {
+                padding-left: 20px;
+                gap: 12px;
+
+                li::after {
+                    top: 2px;
+                    left: -18px;
+                }
+            }
+    
+            &.list--sm {
+                padding-left: 20px;
+                gap: 12px;
+
+                li::after {
+                    top: 2px;
+                    left: -18px;
+                }
+            }
+        }
+    }
+}

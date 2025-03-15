@@ -1,0 +1,76 @@
+.form {
+    &-box {
+        &--colored {
+            border: 2px solid $tt-green;
+            padding: 60px 100px;
+            border-radius: 16px;
+
+            @media (max-width: 991px) {
+                padding: 30px 30px;
+            }
+        
+            @media (max-width: 768px) {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+
+    &__controls {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+        .form-check {
+            margin-top: -10px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        height: 100%;
+    }
+
+    &.pains-form {
+        .form__content__title {
+            max-width: 300px;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.monday-form, &.atlassian-form {
+        .form__content__title {
+            max-width: 430px;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.solutions-form {
+        .form__content__title {
+            max-width: 480px;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.migration-form {
+        .form__content {
+            max-width: 480px;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+}

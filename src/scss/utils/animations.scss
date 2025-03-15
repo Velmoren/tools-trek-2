@@ -1,0 +1,29 @@
+@keyframes orbit1 {
+    from {
+        transform: rotate(0turn) translateX(-540px) rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn) translateX(-540px) rotate(-1turn);
+    }
+}
+
+@keyframes orbit2 {
+    from {
+        transform: rotate(0turn) translateX(390px) rotate(0turn);
+    }
+
+    to {
+        transform: rotate(2turn) translateX(390px) rotate(-2turn);
+    }
+}
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(0turn) translateX(275px) rotate(0turn);
+    }
+
+    to {
+        transform: rotate(2turn) translateX(275px) rotate(-2turn);
+    }
+}

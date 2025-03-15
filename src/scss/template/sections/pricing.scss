@@ -1,0 +1,36 @@
+.pricing {
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &.box--2 {
+            margin-top: 140px;
+        }
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 14px;
+        background: $tt-bg-green-dark;
+        padding: 40px 16px;
+        min-height: 264px;
+    }
+
+    @media (max-width: 991px) {
+        &-item {
+            padding: 24px 14px;
+            min-height: 220px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &-item {
+            padding: 16px 10px;
+            min-height: 186px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.migration-cards {
+    .row {
+        .col {
+            .card {
+                min-height: 386px;
+
+                &__content {
+                    .text {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                .card {
+                    background-image: url('/images/migrations/icon-1.svg');
+                    background-repeat: no-repeat;
+                    background-position: right calc(100% + 40px);
+                }
+            }
+
+            &:nth-child(2) {
+                .card {
+                    background-image: url('/images/migrations/icon-2.svg');
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 20px) top;
+                }
+            }
+
+            &:nth-child(3) {
+                .card {
+                    background-image: url('/images/migrations/icon-3.svg');
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 20px) center;
+                }
+            }
+
+            &:nth-child(4) {
+                .card {
+                    background-image: url('/images/migrations/icon-4.svg');
+                    background-repeat: no-repeat;
+                    background-position: right calc(100% - 40px);
+                }
+            }
+
+            &:nth-child(5) {
+                .card {
+                    background-image: url('/images/migrations/icon-5.svg');
+                    background-repeat: no-repeat;
+                    background-position: right 40px;
+                }
+            }
+
+            &:nth-child(6) {
+                .card {
+                    img {
+                        width: 233px
+                    }
+                }
+            }
+
+            @media (max-width: 768px) {
+                .card {
+                    min-height: 360px;
+
+                    &__content {
+                        .text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    .card {
+                        background-image: url('/images/migrations/icon-1.svg');
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                        background-size: 100px;
+                    }
+                }
+    
+                &:nth-child(2) {
+                    .card {
+                        background-image: url('/images/migrations/icon-2.svg');
+                        background-repeat: no-repeat;
+                        background-position: calc(100% - 20px) top;
+                        background-size: 110px;
+                    }
+                }
+    
+                &:nth-child(3) {
+                    .card {
+                        background-image: url('/images/migrations/icon-3.svg');
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                        background-size: 100px;
+                    }
+                }
+    
+                &:nth-child(4) {
+                    .card {
+                        background-image: url('/images/migrations/icon-4.svg');
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                        background-size: 100px;
+                    }
+                }
+    
+                &:nth-child(5) {
+                    .card {
+                        background-image: url('/images/migrations/icon-5.svg');
+                        background-repeat: no-repeat;
+                        background-position: right center;
+                        background-size: 100px;
+                    }
+                }
+
+                &:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
