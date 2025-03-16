@@ -19,6 +19,8 @@
     "@splidejs/splide": "^4.1.4",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
+    "gsap": "^3.12.7",
+    "scrollmagic": "^2.0.8",
     "wow.js": "^1.2.2"
   }
 }
