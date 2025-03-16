@@ -1,60 +1,7 @@
 .modal {
-    &-feedback {
-        .modal-content {
-            padding: 40px;
-            background-image: url('/images/modals/image-1.png'), url('/images/modals/image-2.png');
-            background-position: 20px 200px, right bottom;
-            background-repeat: no-repeat;
-
-            .modal-body {
-                padding: 0;
-                width: 100%;
-                max-width: 400px;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .modal-close {
-                width: 24px;
-                height: 24px;
-                position: absolute;
-                top: 16px;
-                right: 16px;
-                display: none;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 990px) {
-            .modal-content {
-                background-image: none;
-                padding: 80px 16px 50px 16px;
-
-                .modal-body {
-                    margin: 0;
-                    max-width: 100%;
-                }
-
-                .modal-close {
-                    display: flex;
-                }
-
-                .btn {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
     &-feedback-black {
         .modal-content {
             padding: 40px;
-            background-image: url('/images/modals/image-1.png'), url('/images/modals/image-2.png');
-            background-position: 20px 200px, right bottom;
-            background-repeat: no-repeat;
             position: relative;
             border-radius: 12px;
             background-color: $tt-black;
@@ -82,57 +29,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-            }
-
-            .modal-close {
-                width: 24px;
-                height: 24px;
-                position: absolute;
-                top: 16px;
-                right: 16px;
-                display: none;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 990px) {
-            .modal-content {
-                background-image: none;
-                padding: 80px 16px 50px 16px;
-
-                .modal-body {
-                    margin: 0;
-                    max-width: 100%;
-                }
-
-                .modal-close {
-                    display: flex;
-                }
-
-                .btn {
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    &-comment {
-        .modal-content {
-            padding: 60px 100px;
-            background-color: $tt-gray-light;
-
-            .modal-body {
-                padding: 0;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-
-                textarea {
-                    background-color: $tt-white;
-                }
-          
             }
 
             .modal-close {
